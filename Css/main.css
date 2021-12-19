@@ -1,0 +1,351 @@
+@font-face {
+    font-family: Sacramento;
+    src: url("../fonts/Sacramento-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-LightItalic.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #660708;
+}
+
+header {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    min-height: 100vh;
+    background: url("../img/Background/clothes-rail-918859_640_edited.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+header span {
+    font-family: Sacramento, sans-serif;
+    color: #161a1d;
+
+}
+
+header button {
+    font-family: Montserrat, sans-serif;
+    border-radius: 50px;
+    height: 1.8rem;
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    color: #e5383b;
+}
+
+header button:hover {
+    color: #0b090a;
+}
+
+header h3 {
+    color: #660708;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+nav ul {
+    width: 100%;
+    text-align: center;
+}
+
+nav li {
+    padding: 5px 0;
+}
+
+nav a {
+    color: #660708;
+    text-decoration: none;
+}
+
+header div {
+    text-align: center;
+}
+
+
+section {
+    background-color: #EAEAEA;
+    padding: 1.8rem;
+
+}
+
+section p {
+    color: #e5383b;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 25px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+h2 {
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: Sacramento, sans-serif;
+    font-size: 1.8rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+#about {
+    background-color: #0b090a;
+    columns: 2;
+
+}
+
+#about p {
+    width: 100%;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills p {
+    padding-top: 2rem;
+
+}
+
+#skills a, h3 {
+    color: #0b090a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+#portfolio {
+    background-color: #0b090a;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.gallery-container div {
+    width: 30%;
+    padding: 1rem 0;
+}
+
+
+#testimonials p {
+    padding: 1.8rem;
+
+}
+
+#testimonials div {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+#testimonials img {
+    width: 33%;
+    float: left;
+}
+
+#testimonials input,
+textarea {
+    padding-left: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#testimonials input {
+    display: flex;
+    background-color: #0b090a;
+    color: #e5383b;
+    height: 2rem;
+    width: 20%;
+    font-family: inherit;
+}
+
+#testimonials textarea {
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contact input, textarea {
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+#contact textarea {
+    width: 81%;
+    margin: 2% 0;
+    padding-top: 1rem;
+    font-family: inherit;
+}
+
+#contact input {
+    width: 40%;
+    margin: 2% 1% 1% 0;
+    height: 2.5rem;
+}
+
+#contact input[type='submit'] {
+    background-color: #EAEAEA;
+    color: #e5383b;
+
+    padding: 1rem;
+
+}
+
+#contact {
+    background-color: #0b090a;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #EAEAEA;
+}
+
+footer i {
+    justify-content: center;
+}
+
+footer a {
+    color: #0b090a;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e5383b;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    section h2 {
+        font-size: 2.2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    #testimonials img {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        line-height: 4rem;
+    }
+
+    nav p {
+        padding-left: 2rem;
+    }
+
+    nav ul {
+
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    section p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .gallery-container div {
+        width: 15%
+    }
+
+    #testimonials img {
+        width: 15%;
+    }
+
+    #contact input {
+        width: 80%;
+    }
+
+    #contact textarea {
+        width: 100%;
+    }
+
+    #contact input[type='submit'] {
+        width: 50%;
+    }
+
+    #contact input, textarea {
+        text-align: center;
+    }
+
+    #contact div div {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
